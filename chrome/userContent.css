@@ -1,0 +1,44 @@
+@-moz-document url("about:home") {
+    /* Sets home tab background image. */
+    body{
+        background-image: url("") !important;
+    }
+}
+
+@-moz-document url("about:newtab") {
+    /* Sets new tab background image. */
+    body{
+        background-image: url("wallpaper/shylily.avif") !important;
+    }
+}
+
+@-moz-document url(about:privatebrowsing) {
+    /* Sets private browsing background image. */
+    body{
+        background-image: url("wallpaper/shylily.avif") !important;
+    }
+}
+
+@-moz-document url("about:home"), url("about:newtab"), url("about:privatebrowsing") {
+    /* Makes background images scale to browser window. */
+    body {
+        background-image: url("wallpaper/shylily.avif") !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        background-position-x: center !important;
+        background-position-y: bottom !important;
+    }
+
+    /* Changes pinned shortcuts background and text colors
+     * .top-site-outer .tile {
+     *	background-color: #2f3542 !important;
+}
+*/
+
+    /* When hovering over a pinned shortcut
+     * .top-site-outer:hover {
+     *	background-color: #57606f !important;
+}
+*/
+}
